@@ -126,9 +126,22 @@ export const projects = [
     category: 'Research',
     stack: ['Python', 'TensorFlow', 'Keras'],
     summary: 'Supervisor: Prof. Bhaskar Chaudhury',
+    link: 'https://iopscience.iop.org/article/10.1088/1361-6463/acfdb6/meta',
     highlights: [
       'Developed a U-Net-based deep learning model to predict plasma density from electromagnetic wave profiles, trained on 8000 images with varied data sparsities.',
       'Published findings in Journal of Physics D: Applied Physics, Volume 57.'
     ]
-  }
+  },
+  {
+    name: 'VibeCheck',
+    period: 'March 2026',
+    category: 'Product',
+    stack: ['Python', 'FastAPI', 'Claude Code', 'OpenRouter API'],
+    summary: 'HooHacks 2026 Project',
+    link: 'https://vibecheck-hoohacks.github.io/vibecheck/',
+    highlights: [
+      'Developed a cognitive firewall tool designed to intercept and evaluate agentic code modifications.',
+      'Engineered a Socratic evaluation loop by integrating Claude Code and Gemini APIs to validate automated changes.'
+    ]
+}
 ];

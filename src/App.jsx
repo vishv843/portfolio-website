@@ -178,7 +178,15 @@ function App() {
                 <article key={project.name} className="project-card">
                   <div className="project-header">
                     <div>
-                      <h3>{project.name}</h3>
+                      <h3>
+                        {project.link ? (
+                          <a href={project.link} target="_blank" rel="noreferrer" className="project-link">
+                            {project.name}
+                          </a>
+                        ) : (
+                          project.name
+                        )}
+                      </h3>
                       <p>{project.summary}</p>
                     </div>
                     <span className="project-period">{project.period}</span>
