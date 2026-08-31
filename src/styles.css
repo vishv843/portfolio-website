@@ -146,12 +146,12 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(300px, 0.9fr);
   gap: 32px;
   align-items: stretch;
 }
 
 .hero-copy,
+.hero-photo-card,
 .hero-panel,
 .story-card,
 .timeline-item,
@@ -175,7 +175,32 @@ img {
 }
 
 .hero-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 500px);
+  gap: 20px 28px;
+  align-items: start;
   padding: 40px 36px;
+}
+
+.hero-text {
+  min-width: 0;
+}
+
+.hero-photo-card {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 8px;
+}
+
+.hero-photo {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 22px;
 }
 
 .eyebrow {

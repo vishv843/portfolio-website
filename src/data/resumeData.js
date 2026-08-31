@@ -6,7 +6,7 @@ export const profile = {
   location: 'Richmond, VA',
   phone: '+1 [REDACT]',
   email: 'vishvjoshi2001@gmail.com',
-  linkedIn: 'https://www.linkedin.com/in/vishv-joshi',
+  linkedIn: 'https://www.linkedin.com/in/vishvjoshi',
   github: 'https://github.com/vishv843',
   resumeUrl: 'https://drive.google.com/file/d/1wZoVDA_x2RYA1uIJZk0Ao64hbcKTW1K4/view?usp=sharing',
   summary:
@@ -19,12 +19,6 @@ export const navigation = [
   { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#education' },
   { label: 'Skills', href: '#skills' }
-];
-
-export const quickStats = [
-  { label: 'Experience', value: '1+ years' },
-  { label: 'Focus', value: 'Cloud + AI' },
-  { label: 'Education', value: 'MS CS at UVA' }
 ];
 
 export const education = [

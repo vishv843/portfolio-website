@@ -7,7 +7,6 @@ import {
   navigation,
   profile,
   projects,
-  quickStats,
   skills
 } from './data/resumeData';
 
@@ -56,51 +55,48 @@ function App() {
         <section className="hero section">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">Available for software engineering roles</p>
-              <h1>{profile.name}</h1>
-              <p className="title-line">{profile.title}</p>
-              <p className="summary">{profile.summary}</p>
+              <div className="hero-text">
+                <p className="eyebrow">Available for software engineering roles</p>
 
-              <div className="cta-row">
-                <a className="primary-button" href={profile.resumeUrl} target="_blank" rel="noreferrer">
-                  Download resume
-                </a>
-                <a className="secondary-button" href={profile.linkedIn} target="_blank" rel="noreferrer">
-                  LinkedIn
-                </a>
-                <a className="secondary-button" href={profile.github} target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
+                <h1>{profile.name}</h1>
+                <p className="title-line">{profile.title}</p>
+
+                <p className="summary">{profile.summary}</p>
+
+                <div className="cta-row">
+                  <a className="primary-button" href={profile.resumeUrl} target="_blank" rel="noreferrer">
+                    Download resume
+                  </a>
+                  <a className="secondary-button" href={profile.linkedIn} target="_blank" rel="noreferrer">
+                    LinkedIn
+                  </a>
+                  <a className="secondary-button" href={profile.github} target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                </div>
+
+                <ul className="contact-list" aria-label="Contact details">
+                  <li>
+                    <span className="label">Phone</span>
+                    <a href={`tel:${profile.phone.replace(/\s+/g, '')}`}>{profile.phone}</a>
+                  </li>
+                  <li>
+                    <span className="label">Email</span>
+                    <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                  </li>
+                </ul>
               </div>
 
-              <ul className="contact-list" aria-label="Contact details">
-                <li>
-                  <span className="label">Phone</span>
-                  <a href={`tel:${profile.phone.replace(/\s+/g, '')}`}>{profile.phone}</a>
-                </li>
-                <li>
-                  <span className="label">Email</span>
-                  <a href={`mailto:${profile.email}`}>{profile.email}</a>
-                </li>
-              </ul>
+              <div className="hero-photo-card">
+                <img
+                  src="public/photo.png"
+                  alt="Vishv Joshi"
+                  className="hero-photo"
+                />
+              </div>
             </div>
 
-            <aside className="hero-panel" aria-label="Quick profile summary">
-              <div className="mini-card">
-                <span className="tag">Profile</span>
-                <h3>Engineering with product sense</h3>
-                <p>{profile.headline}</p>
-              </div>
-
-              <div className="stats-grid">
-                {quickStats.map((stat) => (
-                  <div key={stat.label} className="stat-item">
-                    <strong>{stat.value}</strong>
-                    <span>{stat.label}</span>
-                  </div>
-                ))}
-              </div>
-            </aside>
+            
           </div>
         </section>
 
@@ -111,8 +107,10 @@ function App() {
               <p>
                 I’m a software engineer focused on backend systems, cloud-native services, AI-assisted
                 workflows, and polished front-end experiences. My work sits at the intersection of
-                system design, product development, and automation — with a strong emphasis on
-                writing maintainable code and shipping features users actually rely on.
+                system design, product development, and automation with a strong emphasis on
+                writing maintainable code and shipping features users actually rely on. My research and professional 
+                experience has revolved around building robust, human-centered software systems that 
+                blend product thinking, cloud architecture, and practical AI experiences.'
               </p>
             </div>
           </div>
