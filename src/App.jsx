@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { SectionTitle } from './components/SectionTitle';
 import { SkillBadge } from './components/SkillBadge';
+import { Footer } from './components/Footer';
 import {
   education,
   experience,
@@ -65,7 +66,7 @@ function App() {
 
                 <div className="cta-row">
                   <a className="primary-button" href={profile.resumeUrl} target="_blank" rel="noreferrer">
-                    Download resume
+                    View resume
                   </a>
                   <a className="secondary-button" href={profile.linkedIn} target="_blank" rel="noreferrer">
                     LinkedIn
@@ -275,6 +276,8 @@ function App() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }

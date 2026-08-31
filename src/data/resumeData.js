@@ -74,7 +74,7 @@ export const experience = [
   {
     company: 'Hexaware Technologies',
     role: 'Python Full Stack Engineer - Associate',
-    period: 'July 2025 – Sept 2025',
+    period: 'Jul 2025 – Sep 2025',
     location: 'Richmond, VA',
     stack: ['Python', 'React', 'GenAI', 'Azure'],
     highlights: [
@@ -101,7 +101,7 @@ export const experience = [
   {
     company: 'Tekion Corp',
     role: 'Associate Software Engineer',
-    period: 'Jan 2023 – Sept 2023',
+    period: 'Jan 2023 – Sep 2023',
     location: 'Bengaluru, India',
     stack: ['Java', 'Spring Boot', 'Spring Cloud', 'DynamoDB', 'MongoDB', 'Kafka'],
     highlights: [
@@ -116,7 +116,7 @@ export const experience = [
 export const projects = [
   {
     name: 'Plasma Density Model',
-    period: 'Sept 2022 – Feb 2023',
+    period: 'Sep 2022 – Feb 2023',
     category: 'Research',
     stack: ['Python', 'TensorFlow', 'Keras'],
     summary: 'Supervisor: Prof. Bhaskar Chaudhury',
@@ -128,7 +128,7 @@ export const projects = [
   },
   {
     name: 'VibeCheck',
-    period: 'March 2026',
+    period: 'Mar 2026',
     category: 'Product',
     stack: ['Python', 'FastAPI', 'Claude Code', 'OpenRouter API'],
     summary: 'HooHacks 2026 Project',
