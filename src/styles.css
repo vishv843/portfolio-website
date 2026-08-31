@@ -618,7 +618,7 @@ p {
     grid-column: 1;
     grid-row: auto;
     justify-self: auto;
-    max-width: 310px;
+    max-width: 400px;
     margin-top: 24px;
   }
 
