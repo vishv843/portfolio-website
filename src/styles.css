@@ -610,6 +610,18 @@ p {
     padding: 45px 0;
   }
 
+  .hero-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo-card {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: auto;
+    max-width: 310px;
+    margin-top: 24px;
+  }
+
   .hero-copy,
   .hero-panel,
   .project-card,
