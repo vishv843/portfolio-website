@@ -89,7 +89,7 @@ function App() {
 
               <div className="hero-photo-card">
                 <img
-                  src="public/photo.png"
+                  src="photo.png"
                   alt="Vishv Joshi"
                   className="hero-photo"
                 />
@@ -173,18 +173,27 @@ function App() {
 
             <div className="project-grid">
               {visibleProjects.map((project) => (
-                <article key={project.name} className="project-card">
+                <article
+                  key={project.name}
+                  className={project.link ? 'project-card project-card--clickable' : 'project-card'}
+                  onClick={() => {
+                    if (project.link) {
+                      window.open(project.link, '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  onKeyDown={(event) => {
+                    if ((event.key === 'Enter' || event.key === ' ') && project.link) {
+                      event.preventDefault();
+                      window.open(project.link, '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  tabIndex={project.link ? 0 : -1}
+                  role={project.link ? 'link' : undefined}
+                  aria-label={project.link ? `Open ${project.name} project` : undefined}
+                >
                   <div className="project-header">
                     <div>
-                      <h3>
-                        {project.link ? (
-                          <a href={project.link} target="_blank" rel="noreferrer" className="project-link">
-                            {project.name}
-                          </a>
-                        ) : (
-                          project.name
-                        )}
-                      </h3>
+                      <h3>{project.name}</h3>
                       <p>{project.summary}</p>
                     </div>
                     <span className="project-period">{project.period}</span>

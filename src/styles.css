@@ -79,7 +79,7 @@ img {
 }
 
 .section {
-  padding: 88px 0;
+  padding: 55px 0;
 }
 
 .topbar {
@@ -519,6 +519,32 @@ p {
   padding: 24px 22px;
 }
 
+.project-card {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.project-card--clickable {
+  cursor: pointer;
+}
+
+.project-card--clickable:hover,
+.project-card--clickable:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(125, 211, 252, 0.5);
+  box-shadow: 0 24px 48px rgba(56, 189, 248, 0.12);
+  background: rgba(17, 32, 51, 0.96);
+}
+
+.theme-light .project-card--clickable:hover,
+.theme-light .project-card--clickable:focus-visible {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.project-card--clickable:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
 .project-header {
   display: flex;
   justify-content: space-between;
@@ -581,7 +607,7 @@ p {
 
 @media (max-width: 540px) {
   .section {
-    padding: 72px 0;
+    padding: 45px 0;
   }
 
   .hero-copy,
