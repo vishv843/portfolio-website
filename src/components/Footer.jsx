@@ -20,18 +20,11 @@ export function Footer() {
       value: profile.email,
     },
     {
-      id: 'phone',
-      label: 'Phone',
-      href: `tel:${profile.phone}`,
-      isExternal: false,
-      value: profile.phone,
-    },
-    {
       id: 'linkedin',
       label: 'LinkedIn',
       href: profile.linkedIn,
       isExternal: true,
-      value: profile.linkedIn,
+      value: 'LinkedIn',
     },
   ];
 

@@ -4,11 +4,10 @@ export const profile = {
   headline:
     'I build robust, human-centered software systems that blend product thinking, cloud architecture, and practical AI experiences.',
   location: 'Richmond, VA',
-  phone: '+1 [REDACT]',
   email: 'vishvjoshi2001@gmail.com',
   linkedIn: 'https://www.linkedin.com/in/vishvjoshi',
   github: 'https://github.com/vishv843',
-  resumeUrl: 'https://drive.google.com/file/d/1wZoVDA_x2RYA1uIJZk0Ao64hbcKTW1K4/view?usp=sharing',
+  resumeUrl: 'https://drive.google.com/file/d/19LJLcv_RR-yK13hYOxKZDVPYLfDWUZn4/view?usp=sharing',
   summary:
     'Software engineer with experience across AI-driven tooling, cloud-native backend systems, and end-to-end product development. I enjoy building reliable applications that simplify workflows, improve user outcomes, and scale with real-world demand.'
 };

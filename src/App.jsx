@@ -78,10 +78,6 @@ function App() {
 
                 <ul className="contact-list" aria-label="Contact details">
                   <li>
-                    <span className="label">Phone</span>
-                    <a href={`tel:${profile.phone.replace(/\s+/g, '')}`}>{profile.phone}</a>
-                  </li>
-                  <li>
                     <span className="label">Email</span>
                     <a href={`mailto:${profile.email}`}>{profile.email}</a>
                   </li>
@@ -119,7 +115,7 @@ function App() {
 
         <section id="experience" className="section">
           <div className="container">
-            <SectionTitle eyebrow="Experience" title="Career highlights" />
+            <SectionTitle eyebrow="Experience" title="Career Highlights" />
 
             <div className="timeline">
               {experience.map((role) => (
@@ -157,7 +153,7 @@ function App() {
 
         <section id="projects" className="section">
           <div className="container">
-            <SectionTitle eyebrow="Projects" title="Selected work" />
+            <SectionTitle eyebrow="Projects" title="Selected Work" />
 
             <div className="filter-row" aria-label="Project filters">
               {filterOptions.map((option) => (
@@ -219,7 +215,7 @@ function App() {
 
         <section id="education" className="section">
           <div className="container">
-            <SectionTitle eyebrow="Education" title="Academic background" />
+            <SectionTitle eyebrow="Education" title="Academic Background" />
 
             <div className="education-grid">
               {education.map((item) => (
@@ -243,7 +239,7 @@ function App() {
 
         <section id="skills" className="section">
           <div className="container">
-            <SectionTitle eyebrow="Skills" title="Tools and technologies" />
+            <SectionTitle eyebrow="Skills" title="Tools and Technologies" />
 
             <div className="skill-columns">
               <div className="skill-card">
@@ -256,7 +252,7 @@ function App() {
               </div>
 
               <div className="skill-card">
-                <h3>Frameworks & tools</h3>
+                <h3>Frameworks & Tools</h3>
                 <div className="badge-wrap">
                   {skills.technologies.map((skill) => (
                     <SkillBadge key={skill} label={skill} />
